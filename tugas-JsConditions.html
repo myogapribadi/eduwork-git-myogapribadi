@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Conditions</title>
+</head>
+<body>
+    <h3>JS Conditions</h3>
+    <p>Buatlah condition dengan kasus dimana jika x lebih besar dari y
+        maka akan muncul pesan “Horee saya bisa!”</p>
+    <p id="demo"></p>
+
+    <script>
+        var x, y;
+        x = 10;
+        y = 5;
+        z = "";
+
+        if (x > y) {
+            z = "Horee Saya Bisa!";
+        } else {
+            z = "Horee Saya Tidak Bisa!";
+        }
+        alert(z);
+
+        document.getElementById("demo").innerHTML = z;
+    </script>
+</body>
+</html>
