@@ -5,4 +5,6 @@
         document.getElementById("string-single").innerHTML = 'Hu Tao';
         document.getElementById("string-double").innerHTML = "Keqing";
         document.getElementById("string-double").innerHTML = "Jean";
+        document.getElementById("string-double").innerHTML = "Lisa";
+        document.getElementById("string-double").innerHTML = "Mona";
     </script>
