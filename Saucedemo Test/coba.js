@@ -4,4 +4,5 @@
         document.getElementById("number-decimal").innerHTML = 19.999;
         document.getElementById("string-single").innerHTML = 'Hu Tao';
         document.getElementById("string-double").innerHTML = "Keqing";
+        document.getElementById("string-double").innerHTML = "Jean";
     </script>
