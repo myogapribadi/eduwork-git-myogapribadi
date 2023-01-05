@@ -126,6 +126,12 @@ Cypress.Commands.add('sortHilo', () => {
     cy.get('.product_sort_container').select('hilo', 'Price (high to low)')
 })
 
+Cypress.Commands.add('socialmedia', () => {
+    cy.get('.social_twitter').should('contain.text', 'Twitter').and('be.visible')
+    cy.get('.social_facebook').should('contain.text', 'Facebook').and('be.visible')
+    cy.get('.social_linkedin').should('contain.text', 'LinkedIn').and('be.visible')
+})
+
 Cypress.Commands.add('logout', () => {
     cy.get('#react-burger-menu-btn').click()
     cy.get('#logout_sidebar_link').click()
