@@ -2,6 +2,8 @@
 
 describe('Payment Fitur Test', function() {
     it('Visit the website', () => {
+        cy.clearCookies()
+        cy.clearLocalStorage()
         cy.visit('http://zero.webappsecurity.com/login.html')
         cy.url().should('include', 'login.html')
 
