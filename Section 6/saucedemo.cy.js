@@ -82,7 +82,7 @@ describe('Automation Test on Saucedemo', () => {
         // Logout
         cy.logout()
         cy.get('.bot_column').should('be.visible')
-
+        
         })
     })
 })
