@@ -6,8 +6,8 @@ describe('POST a new user', () => {
         }
         cy.request('POST', 'https:reqres.in/api/users', user).then((response) => {
             expect(response.status).equal(201)
-            expect({ name: 'Shin' }).to.deep.equal({ name: 'Shin' })
-            expect({ job: 'Slayer' }).to.deep.equal({ job: 'Slayer' })
+            expect({ name: 'Shin' }).to.eql({ name: 'Shin' })
+            expect({ job: 'Slayer' }).to.eql({ job: 'Slayer' })
         })
     })
 })
