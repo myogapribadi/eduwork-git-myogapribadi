@@ -1,16 +1,17 @@
 /// <reference types="cypress" />
 
 import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps'
-import LoginPage from './loginPages'
+const LoginPage = require("../../pages/loginPages.cy");
 
 Given('I open login page', () => {
-    LoginPage.visit
+    LoginPage.visitUrl()
 })
 When('I submit login', () => {
     LoginPage.fillUsername('username')
     LoginPage.fillPassword('password')
-    LoginPage.signin()
+    LoginPage.signIn()
 })
 Then('I should see homepage', () => {
+    cy.wait(100)
     cy.get('#account_summary_tab').should('be.visible')
 })
